@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'helveticaneue';
+    src: url('../../public/fonts/helveticaneue_medium-webfont.woff') format('woff');       
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; //Pour éviter d'afficher du texte invisible pendant le chargement des polices personnalisées
+}
+@font-face {
+  font-family: 'helveticaneue';
+  src: url('../../public/fonts/helveticaneue_light-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+    font-family: 'helveticaneue';
+    font-weight: 500;
+    line-height: $line-height-base;
+}
+h1,h2{
+  font-size: clamp(1.875rem, 4vw, 3.25rem);
+  line-height: $line-height-title;
+}
+h3{
+  font-size: 1.188rem;
+}
+h4{
+  font-size: 1.375rem;
+}
+

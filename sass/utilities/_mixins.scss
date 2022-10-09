@@ -1,0 +1,65 @@
+// Conteneur de mise en page
+@mixin layout-container ($padding-left: 1.25rem, $padding-right: 1.25rem){
+    max-width: 1440px;
+    margin: auto;
+    padding-left:  $padding-left;
+    padding-right: $padding-right;
+}
+
+// Buttons
+@mixin btn(){   
+    @include transition;
+    cursor: pointer;   
+    padding: 14px 19px 14px;
+    color: $color-white;
+    background-color: $color-secondary;
+    font-size: 16px;
+    letter-spacing: inherit;
+    border: none;
+    border-radius: 150px;
+    &:hover{
+        background-color: darken($color: $color-secondary, $amount: 8%)
+    } 
+}
+
+//  box-shadow
+@mixin boxShadow() {
+    box-shadow: 0px 14px 14px rgba($color-black, 0.15);   
+}
+  
+// Transitions
+@mixin transition ($property: all, $duration: 0.4s){
+    transition: $property $duration ease-in-out;
+}
+
+// Bordures
+@mixin border() {
+    border: 1px solid $color-lightGrey;
+}
+
+// Media querries
+@mixin breakpoints ($point){ 
+    @if ($point == small) {
+        @media screen and (min-width: 23.438em) {
+            @content;
+        }
+    }
+    @else if ($point == medium) {
+        @media screen and (min-width: 45em) {
+            @content;
+        }
+    }
+    @else if($point == large){
+        @media screen and (min-width: 60em) {
+            @content;
+        }
+    }
+    @else if($point == xlarge){
+        @media screen and (min-width: 1440px) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}

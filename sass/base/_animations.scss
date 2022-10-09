@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------*\
+  #Modal
+\*--------------------------------------------------------------*/
+.animation-modal {
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

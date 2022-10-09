@@ -1,0 +1,59 @@
+.header {
+    &__center {
+        @include layout-container ();
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.813rem;
+    }
+    &__logo {
+        font-size: 24px;
+    }
+    &__btn {
+        @include btn;
+        margin: 20px 20px;
+    }
+    &__buttons-toggle {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    &__button-toggle {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &__button-close {
+        display: none;
+    }
+    &__js-show-nav .header__button-display {
+        display: none;
+    }
+    &__js-show-nav .header__button-close {
+        display: block;
+    }
+
+    // Media queries
+    @include breakpoints(medium) {
+        &__center {
+            display: flex;
+            align-items: center;
+        }
+        &__buttons-toggle {
+            display: none;
+        }
+        &__btn {
+            @include btn;
+            margin: 0;
+        }
+    }
+    @include breakpoints(large) {
+        margin-bottom: 3.938rem;
+        &__center {
+            @include layout-container ($padding-left: 6.5rem, $padding-right: 7.875rem);
+        }
+    }
+}

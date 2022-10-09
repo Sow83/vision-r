@@ -1,0 +1,66 @@
+.modal {
+  &__overlay-body {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0.8rem;
+    background-color: rgb($color-primary, 0.6);
+    overflow: auto;
+    visibility: hidden;
+    &.open-modal {
+      visibility: visible;
+    }
+  }
+  &__js-body-no-scrool {
+    overflow: hidden;
+  }
+  &__inner {
+    position: relative;
+    max-width: 56.875rem;
+    background-color: $color-white;
+    @include boxShadow();
+    margin: 10rem auto;
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+  &__btn-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transition: transform 400ms ease-in-out;
+    border: 0;
+    background-color: transparent;
+  }
+  &__img {
+    width: 4.563rem;
+    height: 4.563rem;
+    margin-bottom: 1.563rem;
+  }
+  &__title {
+    margin-bottom: 1.563rem;
+  }
+  &__text {
+    font-size: 1.375rem;
+    max-width: 37.188rem;
+    margin: auto;
+  }
+  &__text:not(:last-child) {
+    margin-bottom: 1.563rem;
+  }
+  &__btn-close:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  &__btn-close-img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include breakpoints(large) {
+    &__inner {
+      padding: 5rem 6.563rem;
+    }
+  }
+}

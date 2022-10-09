@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avec Vision.R, travaillez au buraeau...comme si vous étiez encore à la maison!">
+    <title>Vision.R</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="public/images/favicons/favicon-32x32.ico" sizes="any">
+    <link rel="icon" href="public/images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="public/images/favicons/apple-touch-icon-180x180.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <!-- Template Main Prefixed CSS File(production) -->
+    <!-- <link rel="stylesheet" href="public/css/stylePrefixed.css"> -->
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero__center">
+            <div class="hero__img">
+
+                <header class="header" aria-label="entête principale">
+                    <div class="header__center">
+                        <div class="header__head">
+                            <a href="index.html" class="header__logo">Vision.R</a>
+                            <button type="button" class="header__buttons-toggle">
+                                <img class="header__button-display header__button-toggle"
+                                    src="public/images/icons-toggle/icon-display.svg"
+                                    alt="Bouton ouvrir menu de navigation principale">
+                                <img class="header__button-close header__button-toggle"
+                                    src="public/images/icons-toggle/icon-close.svg"
+                                    alt="Bouton fermer menu de navigation principale">
+                            </button>
+                        </div><!-- End header head -->
+                        <nav class="nav" id="toggleNavbar">
+                            <ul class="nav__list">
+                                <li><a class="nav__link" href="index.html">Low Solution</a></li>
+                                <li><a class="nav__link" href="index.html">Low Technology</a></li>
+                                <li><a class="nav__link" href="index.html">High Price</a></li>
+                                <li><button type="button" class="header__btn  modal-btn-js">Buy it</button></li>
+                            </ul>
+                        </nav><!-- End nav -->
+                    </div>
+                </header><!-- End header -->
+
+                <div class="hero__title-content">
+                    <p class="hero__intro">Du <span class="hero__uppercase">jamais vu </span>(enfin jusqu'à maintenant,
+                        du
+                        coup)</p>
+                    <h1 class="hero__title">Avec Vision.R, travaillez au bureau... comme si vous étiez encore à la
+                        maison !</h1>
+                </div>
+
+            </div>
+            <div class="hero__ellipse">
+                <span class="hero__offer">Offre spéciale</span><span class="hero__price">799.99€*</span><span
+                    class="hero__old-price">*au
+                    lieu de 1.499,99€</span>
+            </div><!-- End ellipse -->
+        </div>
+    </div>
+
+    <!-- ======== Main ======== -->
+    <main>
+        <section class="modal">
+            <div class="modal__overlay-body">
+                <div class="modal__inner">
+                    <button class="modal__btn-close" type="button"><img class="modal__btn-close-img"
+                            src="public/images/icons-toggle/icon-close.svg" alt="button-close"></button>
+                    <img class="modal__img" src="public/images/speak-no-evil-monkey.png"
+                        alt="un singe qui met ses deux mains sur la bouche">
+                    <h2 class="modal__title">Vous y avez (vraiment?) cru?</h2>
+                    <p class="modal__text">En tout cas, on espère que ça vous a fait sourire, parce qu’on en a bien
+                        besoin en ce moment. Et sinon, vous avez sûrement des produits plus intéressants à vendre.</p>
+                    <p class="modal__text">Ça tombe bien, nos équipes sont plus fortes en communication digitale qu’en
+                        innovations en carton.</p>
+                </div>
+            </div>
+        </section><!-- End Modal  -->
+
+        <div class="buyItnow">
+            <p class="buyItnow__text">Vision.R with a grand “R” like in the mot “Revolution” ! You are afraid to feel
+                déstabilized with the futur retour au bureau ? With rScreenz, be rassuré.e.s ! Get instant, real time,
+                high resolution, social videocall and feel comme à la maison. Bref, get ready to faire un carton !</p>
+            <button type="button" class="buyItnow__btn modal-btn-js">Buy it now</button>
+        </div>
+
+        <!-- Swiper js -->
+        <div class="swiper mySwiper_1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img width="1440" height="700" 
+                         srcset="public/images/slides/slider_B1-374w.jpg 374w, 
+                                 public/images/slides/slider_B1-1440w.jpg 1440w" 
+                          sizes="(max-width:374px) 374px,
+                                 1440px" 
+                            src="public/images/slides/slider_B1-1440w.jpg"
+                            alt="deux femmmes qui se parlent en regardant un ordinateur" 
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img width="1440" height="700" 
+                         srcset="public/images/slides/slider_B2-374w.jpg 374w, 
+                                 public/images/slides/slider_B2-1440w.jpg 1440w" 
+                          sizes="(max-width:374px) 374px,
+                                 1440px" 
+                            src="public/images/slides/slider_B2-1440w.jpg"
+                        alt="deux femmes face à face avec un verre à la main" 
+                    loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img width="1440" height="700" 
+                        srcset="public/images/slides/slider_B3-374w.jpg 374w, 
+                                 public/images/slides/slider_B3-1440w.jpg 1440w" 
+                          sizes="(max-width:374px) 374px,
+                                 1440px" 
+                            src="public/images/slides/slider_B3-1440w.jpg"
+                            alt="trois personnes qui sourient, assises sur un canapé" 
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper JS -->
+
+        <section class="modest">
+            <img class="modest__img" width="710" height="790" 
+                                    srcset="public/images/visuel-375w.jpg 375w,
+                                             public/images/visuel-710w.jpg 710w" 
+                                     sizes="(max-width:375px) 375px,
+                                             710px" 
+                                       src="public/images/visuel-710w.jpg" 
+                                       alt="un homme avec une grande mediumte"
+                                   loading="lazy">
+            <div class="modest__pudique">
+                <img class="modest__padlock" src="public/images/padlock.svg" alt="cadenas" loading="lazy">
+                <h2 class="modest__title">The pudique (or je suis en pyjama et j’assume pas) effect</h2>
+                <p class="modest__text">Start from zero, choose your background and create your new life while
+                    impressing the collègues.</p>
+            </div>
+        </section><!-- End section modest  -->
+
+        <section class="accessories">
+            <h2 class="accessories__title">Some indispensables accessoires to optimize your experience</h2>
+            <!-- Swiper js -->
+            <div class="swiper mySwiper_2">
+                <div class="swiper-wrapper accessories__swiper-wrapper">
+                    <div class="swiper-slide accessories__swiper-slide">
+                        <img class="accessories__img" width="315" height="315" src="public/images/products-slides/Product_1-315w.png"
+                            alt="kit de filtres drôle" loading="lazy">
+                        <h3>The funny filter kit (D’jeuns friendly)</h3>
+                        <p class="accessories__price">199,00 €</p>
+                    </div>
+                    <div class="swiper-slide accessories__swiper-slide">
+                        <img class="accessories__img" width="315" height="315" src="public/images/products-slides/Product_2-315w.png"
+                            alt="écran éteint" loading="lazy">
+                        <h3>Screen camera off</h3>
+                        <p class="accessories__price">229,00 €</p>
+                    </div>
+                    <div class="swiper-slide accessories__swiper-slide">
+                        <img class="accessories__img" width="315" height="315" src="public/images/products-slides/Product_3-315w.png"
+                            alt="chausson charentaise" loading="lazy">
+                        <h3>The Charentaiz (Yeuv Friendly)</h3>
+                        <p class="accessories__price">349,95 €</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination accessories__swiper-pagination"></div>
+            </div>
+            <!-- Swiper JS -->
+        </section><!-- End section accessories-->
+
+    </main>
+    <!-- ======== End Main ======== -->
+
+    <!-- ======== Footer ======== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="index.html"><img class="footer__LogoColorz" src="public/images/LogoColorz.svg" alt="logo colorz"
+                    loading="lazy"></a>
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h4 class="footer__title">Paris</h4>
+                    <p>16 bis avenue Parmentier<br>75011 Paris, France </p>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Lyon</h4>
+                    <p>1 rue Lalande<br>69006 Lyon, France</p>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Nous contacter</h4>
+                    <p><a href="tel:+33(0)182838360">+33 (0)1 82 83 83 60</a><br><a
+                            href="mailto:hello@colorz.fr">hello@colorz.fr</a></p>
+                </div>
+                <img class="footer__logoCreated" src="public/images/LogoCreatedtoCreate.svg"
+                    alt="logo created to create colorz " loading="lazy">
+            </div>
+        </div>
+    </footer>
+    <!-- ======== End Footer ======== -->
+
+    <!-- Script swiper CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Swiper js file  -->
+    <script src="sass/vendors/swiper.js"></script>
+
+    <!-- Main JS file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+// All swipers
+.swiper {
+  @include layout-container ($padding-left: 0, $padding-right: 0);
+}
+
+// swiper 1
+.swiper-pagination-bullet {
+  background-color: $color-white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-primary;
+}
+
+// swiper 2:  accessories
+.accessories {
+  @include layout-container ();
+    margin-bottom: 3.75rem;
+  &__title {
+    max-width: 63.875rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.875rem;
+  }
+  &__swiper-slide {
+    width: 60%;
+    height: auto;
+    @include border();
+    padding: 24px 38px;
+    text-align: center;
+  }
+  &__img {
+    max-width: 315px;
+  }
+  &__price {
+    font-weight: 400;
+  }
+  &__swiper-pagination {
+    display: none;
+  }
+
+  //  Media queries
+  @include breakpoints(medium) {
+    &__swiper-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__swiper-slide {
+      flex: 0 1 calc(100%/3 - 95px);
+      padding: 51px 41px 35px;
+    }
+  }
+  @include breakpoints(large) {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+}

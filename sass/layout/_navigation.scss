@@ -1,0 +1,53 @@
+.nav{
+  height: 0;
+  overflow: hidden;
+  @include transition ();
+  &__link{
+    display: inline-block;
+    padding: 20px 20px; 
+    cursor: pointer;
+    margin-top: 5px;
+}
+&__link::after{
+  content: '';
+  width: 0;
+  height: 0.313rem;
+  display: block;
+  @include transition;
+  background: red;
+  margin: auto;
+}
+&__link:hover::after{
+  width: 100%;
+} 
+// &__link-active{
+//   color: $color-primary;
+// }
+// &__link-active::after{
+//     content: '';
+//     width: 100%;
+//     height: 0.313rem;
+//     display: block;
+//     @include transition;
+//     margin: auto;
+// }
+&__js-show-nav{
+  height: 20.5rem;
+  visibility: visible;
+  background: white;
+  z-index: 100;
+  width: 100%;
+}
+
+//  Media queries
+@include breakpoints(medium){
+  height: initial;
+  visibility: visible;
+  margin-left: auto;
+  &__list{
+    display: flex;
+    align-items:center
+  } 
+}
+}
+
